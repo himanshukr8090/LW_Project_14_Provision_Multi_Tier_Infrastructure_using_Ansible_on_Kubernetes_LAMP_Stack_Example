@@ -1,0 +1,11 @@
+- name: Deploy LAMP Stack on Kubernetes
+  hosts: localhost
+  tasks:
+    # - name: Apply Persistent Volumes and Claims
+    #   command: kubectl apply -f pv-pvc.yml
+
+    - name: Deploy MySQL
+      command: kubectl apply -f mysql-deployment.yml
+
+    - name: Deploy Apache + PHP
+      command: kubectl apply -f apache-deployment.yml

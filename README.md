@@ -55,6 +55,27 @@ graph TB
 
 ---
 
+## 📁 Project Structure
+
+```
+.
+├── Apache-files/
+│   ├── Dockerfile              # Custom Apache+PHP image
+│   └── index.php              # PHP application with MySQL connectivity
+├── mysql/
+│   ├── Dockerfile              # Custom MySQL image
+│   └── mysqld.cnf             # MySQL configuration
+├── lamp-k8s-ansible/
+│   ├── apache-deployment.yml   # Apache Kubernetes deployment
+│   ├── apache-pod-hostnet.yml  # Apache pod with hostNetwork
+│   ├── mysql-deployment.yml    # MySQL Kubernetes deployment
+│   ├── pv-pvc.yml             # Persistent Volume & Claims
+│   └── playbook.yml           # Ansible automation playbook
+├── scripts/
+│   ├── setup.sh               # Quick setup script
+│   └── cleanup.sh             # Environment cleanup
+└── README.md                  # This file
+```
 
 ---
 
@@ -429,8 +450,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙌 Author
 
-👨‍💻 **Sumit Tiwari**   
-🔗 [LinkedIn](https://www.linkedin.com/in/sumittiwaridevops/) | [GitHub](https://github.com/iamsumit24)  
+👨‍💻 **Himanshu Kumar Singh**   
+🔗 [LinkedIn](www.linkedin.com/in/himanshukrsingh0) 
 
 ---
 
